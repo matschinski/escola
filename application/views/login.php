@@ -5,11 +5,12 @@
         <meta charset="utf-8">
         <meta name="robots" content="noindex, nofollow">
 
-        <title></title>
+        <title> Portal Antônio Barela - Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+          <link rel="icon" href="<?=base_url()?>assets/favicon.ico" type="image/ico">
         <style type="text/css">
-            body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
+            body#LoginForm{ background-image:url("https://i0.wp.com/tribunagoias.com.br/wp-content/uploads/2018/04/quadro-educacao-escola.jpeg?fit=1920%2C1080.jpeg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
 
             .form-heading { color:#fff; font-size:23px;}
             .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
@@ -23,7 +24,7 @@
                 line-height: 50px;
             }
             .main-div {
-                background: #ffffff none repeat scroll 0 0;
+                background: #fff0 none repeat scroll 0 0;
                 border-radius: 2px;
                 margin: 10px auto 30px;
                 max-width: 38%;
@@ -94,9 +95,11 @@
             <div class="container">
                 <div class="login-form">
                     <div class="main-div">
+                        <br><br><br>
                         <div class="panel">
-                            <h2>Área Restrita</h2>
-                            <p>Insira seu nome de usuário e senha</p>
+                            <br><br><br>
+                            <h1 style="color: white;">Área Restrita</h1>
+                            <p style="color: white;" >Insira seu e-mail e senha</p>
                         </div>
                         <form id="login" method="post" action="<?= base_url()?>dashboard/logar" >
 
@@ -115,8 +118,11 @@
                             <div class="forgot">
 
                                 <button type="submit" class="btn btn-primary">Login</button>
-
+                               
                         </form>
+                        
+                        <br> <br> 
+                                <button type="submit" class="btn btn-dark col-md-12 "  onclick="window.location.href='dashboard';">Administrador</button>
                     </div>
                     <p class="botto-text"> Portal Antônio Barella</p>
                 </div></div></div>

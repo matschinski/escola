@@ -19,7 +19,7 @@ class Dashboard extends CI_Controller {
 
     public function index() {
         $this->verificar_sessao();
-        $this->load->view('includes/html_header');
+        //$this->load->view('includes/html_header');
         $this->load->view('includes/menu');
         $this->load->view('dashboard');
         $this->load->view('includes/html_footer');
@@ -46,8 +46,8 @@ class Dashboard extends CI_Controller {
     }
     
     public function logout (){
-        $this->session -> sess_destroy;
-        redirect('dashboard/login');
+        $this->session -> sess_destroy( );
+        redirect('dashboard');
     }
 
 }
