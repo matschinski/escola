@@ -41,7 +41,7 @@ class Dashboard extends CI_Controller {
             $this->session -> set_userdata($dados);
             redirect('dashboard');
         } else {
-            redirect('dashboard/login');
+            redirect('aluno');
         }
     }
     

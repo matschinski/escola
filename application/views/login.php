@@ -122,7 +122,7 @@
                         </form>
                         
                         <br> <br> 
-                                <button type="submit" class="btn btn-dark col-md-12 "  onclick="window.location.href='dashboard';">Administrador</button>
+                        <button type="button" class="btn btn-dark col-md-12 "  onclick="window.location.href='';">Administrador</button>
                     </div>
                     <p class="botto-text"> Portal Antônio Barella</p>
                 </div></div></div>
