@@ -2,58 +2,187 @@
 
 
   
-
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
-
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <a class="navbar-brand" href="#pablo" style="font-weight: bold"> Portal do aluno</a>
+          </div>
+          
+       
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-lg">
+  
+  <canvas id="bigDashboardChart"></canvas>
+  
+  
+</div> -->
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/student.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Alunos</p> 
+                </div>
+              </div>
             </div>
           </div>
-
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-              </tbody>
-            </table>
+         <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/teacher.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Professores</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+         <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/serie.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Séries</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/disciplina.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Disciplinas</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/recados.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Recados</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/relatorio.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Relatórios</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/users.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Usuários</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">   
+                  </div>          
+                </div>
+              </div>
+              <div class="card-footer ">
+                  <img style=" width:42% ; height:15% ; display: block;margin-left: auto; margin-right: auto  " src="<?= base_url(); ?>assets/img/logout.png">
+                        <a  href="<?= base_url(); ?>dashboard"> 
+                <hr>
+                <div class="stats">
+                  <p style="text-align:center; font-size: 150% ; color: forestgreen; font-weight: bold;">Logout</p> 
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+       
       </div>
+      <footer class="footer footer-black  footer-white ">
+     
+          
+      </footer>
     </div>
+  </div>
 
-    
+
+

@@ -1,7 +1,30 @@
+<div style="background-color: #ffffff;"class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            
+          </div>
+          
+       
+        </div>
+      </nav>
 
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <div class="col-md-10">
-        <h1 class="page-header"> Usuários</h1>
+
+
+
+
+
+    <div class="col-md-12">
+     
+        <center> <h1>Usuários</h1> </center>
     </div>
     <div class="col-md-2">
         <a class="btn btn-primary btn-block" href="usuario/cadastro"> Novo Usuário</a> 

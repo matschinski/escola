@@ -1,7 +1,27 @@
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+<div style="background-color: #ffffff;"class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            
+          </div>
+          
+       
+        </div>
+      </nav>
+
+
+
+
     <div class="col-md-12">
-        <h1 class="page-header">
-            Novo Usuário</h1>
+        <h1>Editar Usuário</h1>
     </div>
     <div class="col-md-12">
         <form action="<?= base_url() ?>usuario/salvar_atualizacao" method="post">
@@ -45,7 +65,7 @@
                     </select> 
                 </div>
             </div>
-            <div style="text-align: right;">
+            <div style="text-align: left;">
                 <button class="btn btn-success" type="submit">Enviar</button> 
                 <button class="btn btn-default" type="reset" onClick="history.go(-1)" >Cancelar</button> </div>
         </form>

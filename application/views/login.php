@@ -1,136 +1,86 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="robots" content="noindex, nofollow">
-
-        <title> Portal Antônio Barela - Login</title>
+        <title>Login V12</title>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-          <link rel="icon" href="<?=base_url()?>assets/favicon.ico" type="image/ico">
-        <style type="text/css">
-            body#LoginForm{ background-image:url("https://i0.wp.com/tribunagoias.com.br/wp-content/uploads/2018/04/quadro-educacao-escola.jpeg?fit=1920%2C1080.jpeg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
-
-            .form-heading { color:#fff; font-size:23px;}
-            .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
-            .panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
-            .login-form .form-control {
-                background: #f7f7f7 none repeat scroll 0 0;
-                border: 1px solid #d4d4d4;
-                border-radius: 4px;
-                font-size: 14px;
-                height: 50px;
-                line-height: 50px;
-            }
-            .main-div {
-                background: #fff0 none repeat scroll 0 0;
-                border-radius: 2px;
-                margin: 10px auto 30px;
-                max-width: 38%;
-                padding: 50px 70px 70px 71px;
-            }
-
-            .login-form .form-group {
-                margin-bottom:10px;
-            }
-            .login-form{ text-align:center;}
-            .forgot a {
-                color: #777777;
-                font-size: 14px;
-                text-decoration: underline;
-            }
-            .login-form  .btn.btn-primary {
-                background: #f0ad4e none repeat scroll 0 0;
-                border-color: #f0ad4e;
-                color: #ffffff;
-                font-size: 14px;
-                width: 100%;
-                height: 50px;
-                line-height: 50px;
-                padding: 0;
-            }
-            .forgot {
-                text-align: left; margin-bottom:30px;
-            }
-            .botto-text {
-                color: #ffffff;
-                font-size: 14px;
-                margin: auto;
-            }
-            .login-form .btn.btn-primary.reset {
-                background: #ff9900 none repeat scroll 0 0;
-            }
-            .back { text-align: left; margin-top:10px;}
-            .back a {color: #444444; font-size: 13px;text-decoration: none;}
-        </style>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-            window.alert = function () {};
-            var defaultCSS = document.getElementById('bootstrap-css');
-            function changeCSS(css) {
-                if (css)
-                    $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
-                else
-                    $('head > link').filter(':first').replaceWith(defaultCSS);
-            }
-            $(document).ready(function () {
-                var iframe_height = parseInt($('html').height());
-                window.parent.postMessage(iframe_height, 'https://bootsnipp.com');
-            });
-        </script>
+        <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="<?= base_url(); ?>login/images/icons/favicon.ico"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/vendor/animate/animate.css">
+        <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/css/util.css">
+        <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>login/css/main.css">
+        <!--===============================================================================================-->
     </head>
     <body>
 
-    <html>
-        <head>
-
-            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <!------ Include the above in your HEAD tag ---------->
-        </head>
-        <body id="LoginForm">
-            <div class="container">
-                <div class="login-form">
-                    <div class="main-div">
-                        <br><br><br>
-                        <div class="panel">
-                            <br><br><br>
-                            <h1 style="color: white;">Área Restrita</h1>
-                            <p style="color: white;" >Insira seu e-mail e senha</p>
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('https://diariodegoias.com.br/images/2018/03/16/quadro_educacao_escola.jpeg');">
+                <div class="wrap-login100 p-t-190 p-b-30">
+                    <form class="login100-form validate-form" id="login" method="post" action="<?=base_url()?>dashboard/logar" >
+                        <div class="login100-form-avatar">
+                            <img src="<?= base_url(); ?>login/images/login.png" alt="AVATAR">
                         </div>
-                        <form id="login" method="post" action="<?= base_url()?>dashboard/logar" >
 
-                            <div class="form-group">
+                        <span class="login100-form-title p-t-20 p-b-45">
+                            Página de Login
+                        </span>
 
+                        <div class="wrap-input100 validate-input m-b-10 form-group" data-validate = "Username is required">
+                            <input class="input100" type="email" id="inputEmail" name="email" placeholder="Username">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </div>
 
-                                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="E-mail" required autofocus>
+                        <div class="wrap-input100 validate-input m-b-10 form-group" data-validate = "Password is required">
+                            <input class="input100" type="password"  id="inputPassword" name="senha" placeholder="Password">
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </div>
 
-                            </div>
+                        <div class="container-login100-form-btn p-t-10">
+                            <button class="login100-form-btn" type="submit">
+                                Login
+                            </button>
+                        </div>
 
-                            <div class="form-group">
-
-                                <input type="password" class="form-control" id="inputPassword" name="senha" placeholder="Senha">
-
-                            </div>
-                            <div class="forgot">
-
-                                <button type="submit" class="btn btn-primary">Login</button>
-                               
-                        </form>
                         
-                        <br> <br> 
-                        <button type="button" class="btn btn-dark col-md-12 "  onclick="window.location.href='';">Administrador</button>
-                    </div>
-                    <p class="botto-text"> Portal Antônio Barella</p>
-                </div></div></div>
 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--===============================================================================================-->	
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="js/main.js"></script>
 
     </body>
-</html>
-<script type="text/javascript">
-</script>
-</body>
 </html>

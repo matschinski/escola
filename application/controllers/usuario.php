@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
@@ -83,10 +83,10 @@ class Usuario extends CI_Controller {
         $this->load->view('includes/html_header');
         $this->load->view('includes/menu');
         if ($indice == 1) {
-            $data['msg'] = "Senha atualizada com sucesso.";
+            $data['msg'] = "Senha atualizada com sucesso";
             $this->load->view('includes/msg_sucesso', $data);
         } else if ($indice == 2) {
-            $data['msg'] = "Não foi possível atualizar a senha do usuário.";
+            $data['msg'] = "Não foi possível atualizar a senha do usuário";
             $this->load->view('includes/msg_erro', $data);
         }
         $this->load->view('editar_usuario', $data);
@@ -123,7 +123,7 @@ class Usuario extends CI_Controller {
     }
 
     public function salvar_senha() {
-        $this->verificar_sessao();
+      
         $id = $this->input->post('idUsuario');
         $senha_antiga = md5($this->input->post('senha_antiga'));
         $senha_nova = md5($this->input->post('senha_nova'));

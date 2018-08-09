@@ -19,7 +19,7 @@ class Dashboard extends CI_Controller {
 
     public function index() {
         $this->verificar_sessao();
-        //$this->load->view('includes/html_header');
+        $this->load->view('includes/html_header');
         $this->load->view('includes/menu');
         $this->load->view('dashboard');
         $this->load->view('includes/html_footer');
@@ -27,7 +27,7 @@ class Dashboard extends CI_Controller {
 
     public function logar() {
         $email = $this->input->post('email');
-        $senha = $this->input->post('senha');
+        $senha = md5 ($this->input->post('senha'));
 
         $this->db->where('email', $email);
         $this->db->where('senha', $senha);
@@ -41,7 +41,7 @@ class Dashboard extends CI_Controller {
             $this->session -> set_userdata($dados);
             redirect('dashboard');
         } else {
-            redirect('aluno');
+            redirect('dashboard/login');
         }
     }
     

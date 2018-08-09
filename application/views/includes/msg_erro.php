@@ -1,9 +1,14 @@
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-<div class="alert alert-danger" role="alert">
+<div class="col-md-1"> 
     
-    <?= $msg?> 
-
-
 </div>
+
+    <div style=" text-align: right; float: right;" class="col-md-3"> 
+        
+     <div  style=" text-align: center; float: right;"class=" alert alert-danger col-md-12 " role="alert" >
+
+        <?= $msg ?> 
+
     </div>
+    </div>
+    
